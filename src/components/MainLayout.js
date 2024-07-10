@@ -29,7 +29,7 @@ const MainLayout = () => {
       <MainContent>
         <Sidebar />
         <Content>
-          <PageHeader title="Migration Data" subtitle="Explore various data points and visualizations related to migration." />
+          <PageHeader title="Global Changes Awarness" subtitle="Explore various data points and visualizations related to the global changes over the years." />
           <Outlet />
         </Content>
       </MainContent>
