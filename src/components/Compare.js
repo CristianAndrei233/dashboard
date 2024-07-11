@@ -16,6 +16,10 @@ import TempAnomaliesChart from '../components/TempAnomalies/TempAnomaliesStockCh
 import TempAnomaliesTable from '../components/TempAnomalies/TempAnomaliesStockTable';
 import PopulationGrowthChart from '../components/PopulationGrowthRate/PopulationGrowthRate';
 import PopulationGrowthTable from '../components/PopulationGrowthRate/PopulationGrowthRateTable';
+import MigrantFlowStockChart from './MigrationFlows/MigrationFlowsStockChart';
+import MigrantFlowStockTable from './MigrationFlows/MigrationFlowsStockTable';
+import WorldMapMigrationFlow from './MigrationFlows/WorldMap';
+import OceanPHChart from './SeawaterPH/SeawaterPH';
 
 const ComparisonContainer = styled.div`
   display: flex;
@@ -73,6 +77,10 @@ const components = {
   WorldMapCo2Emissions,
   WorldMapCo2AviationEmissions,
   WorldMapTemeratureAnomalies,
+  MigrantFlowStockChart,
+  WorldMapMigrationFlow,
+  MigrantFlowStockTable,
+  OceanPHChart
 };
 
 const componentNames = {
@@ -92,6 +100,11 @@ const componentNames = {
   WorldMapCo2Emissions: 'World Map CO2 Emissions',
   WorldMapCo2AviationEmissions: 'World Map CO2 Aviation Emissions',
   WorldMapTemeratureAnomalies: 'World Map Temperature Anomalies',
+  WorldMapMigrationFlow : 'World Map Migration Flow',
+  MigrantFlowStockChart : 'Migration Flow Stock Chart',
+  MigrantFlowStockTable : 'Migration Flow Stock Table', 
+  OceanPHChart : 'Ocean PH Chart'
+
 };
 
 const ComparisonPage = () => {
