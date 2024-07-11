@@ -81,6 +81,7 @@ const Sidebar = () => {
   const [expandAviationCO2, setExpandAvioationCO2] = useState(false);
   const [expandTempAnomalies, setExpandTempAnomalies] = useState(false);
   const [expandPopulationGrowth, setEexpandPopulationGrowth] = useState(false);
+  const [expandMigrationFlows, setExpandMigrationFlows] = useState(false);
 
 
   return (
@@ -230,10 +231,54 @@ const Sidebar = () => {
           </SubNavItem>
         </SubNav>
       )}
+      <NavItem onClick={() => setExpandMigrationFlows(!expandMigrationFlows)}>
+        <FontAwesomeIcon icon="globe" style={{marginTop: '1px'}}/>
+        Migration Flows
+      </NavItem>
+      {expandMigrationFlows && (
+        <SubNav>
+          <SubNavItem>
+            <Link to="/migration-flow">
+              <FontAwesomeIcon icon="globe" />
+              World Map
+            </Link>
+          </SubNavItem>
+          <SubNavItem>
+            <Link to="/migration-flow-table">
+              <FontAwesomeIcon icon="table" />
+              Table
+            </Link>
+          </SubNavItem>
+          <SubNavItem>
+            <Link to="/migration-flow-chart">
+              <FontAwesomeIcon icon="table" />
+              Chart
+            </Link>
+          </SubNavItem>
+        </SubNav>
+      )}
       <NavItem>
         <Link to="/comparison" style={{textDecoration: 'none', color: "#ecf0f1"}}>
           <FontAwesomeIcon icon="exchange" style={{ marginTop: '1px' }} />
           Comparison Page
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link to="/assistance-chart" style={{textDecoration: 'none', color: "#ecf0f1"}}>
+          <FontAwesomeIcon icon="table" style={{ marginTop: '1px' }} />
+          Assistance
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link to="/seawaterPH-chart" style={{textDecoration: 'none', color: "#ecf0f1"}}>
+          <FontAwesomeIcon icon="table" style={{ marginTop: '1px' }} />
+          Seawater PH
+        </Link>
+      </NavItem>
+      <NavItem>
+        <Link to="/sealevelrise-chart" style={{textDecoration: 'none', color: "#ecf0f1"}}>
+          <FontAwesomeIcon icon="table" style={{ marginTop: '1px' }} />
+          Sealevel Rise
         </Link>
       </NavItem>
     </SidebarContainer>

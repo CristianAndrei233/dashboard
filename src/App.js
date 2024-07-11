@@ -18,7 +18,13 @@ import TempAnomaliesTable from './components/TempAnomalies/TempAnomaliesStockTab
 import PopulationGrowthChart from './components/PopulationGrowthRate/PopulationGrowthRate'; 
 import PopulationGrowthTable from './components/PopulationGrowthRate/PopulationGrowthRateTable';
 import ComparisonPage from './components/Compare'; 
-
+import WorldMap6 from './components/MigrationFlows/WorldMap'
+import MigrantFlowStockChart from './components/MigrationFlows/MigrationFlowsStockChart';
+import MigrantFlowStockTable from './components/MigrationFlows/MigrationFlowsStockTable'; 
+import AssistanceChart from './components/Assistance/AssistanceChart';
+import OceanPHChart from './components/SeawaterPH/SeawaterPH';
+import SeaLevelChart from './components/SeaLevel/SeaLevelRise';
+// import GlobalChangesAwareness from './components/Home';
 
 
 function App() {
@@ -26,9 +32,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route path="world-map" element={<WorldMap1 />} />
-          <Route path="table" element={<MigrantStockTable />} />
-          <Route path="chart" element={<MigrantStockChart />} />
+          <Route path="/world-map" element={<WorldMap1 />} />
+          <Route path="/table" element={<MigrantStockTable />} />
+          <Route path="/chart" element={<MigrantStockChart />} />
           <Route path="/responsible-world-map" element={<WorldMap2 />} />
           <Route path="/co2-emissions" element={<WorldMap3 />} />
           <Route path="/co2-emissions-table" element={<CO2StockTable />} />
@@ -43,6 +49,12 @@ function App() {
           <Route path="/population-growth-chart" element={<PopulationGrowthChart />} />
           <Route path="/population-growth-table" element={<PopulationGrowthTable />} />
           <Route path="/comparison" element={<ComparisonPage/>} />
+          <Route path="/migration-flow" element={<WorldMap6/>} />
+          <Route path="/migration-flow-chart" element={<MigrantFlowStockChart/>} />
+          <Route path="/migration-flow-table" element={<MigrantFlowStockTable/>} />
+          <Route path="/assistance-chart" element={<AssistanceChart />} />
+          <Route path='/seawaterPH-chart' element={<OceanPHChart />} />
+          <Route path='/sealevelrise-chart' elementment={<SeaLevelChart/>} />
         </Route>
       </Routes>
     </Router>

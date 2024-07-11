@@ -29,7 +29,7 @@ const MainLayout = () => {
       <MainContent>
         <Sidebar />
         <Content>
-          <PageHeader title="Global Changes Awarness" subtitle="Explore various data points and visualizations related to the global changes over the years." />
+          <PageHeader title="Global Changes Awarness" subtitle="Welcome to the Global Changes Awareness application. This platform provides a comprehensive overview of various data points and visualizations related to global changes over the years. Explore different aspects such as sea level rise, ocean acidification, and other crucial environmental indicators to understand the impact of climate change and other global phenomena. This application was developed by Eric Costerousse, Marlon Valencia, and Cristian Dinca." />
           <Outlet />
         </Content>
       </MainContent>
